@@ -1,7 +1,13 @@
 import "./styles/global.scss";
+import { RepositoryList } from "./components/RepositoryList";
+import { Counter } from "./components/Counter";
+import React from "react";
 
 export function App() {
-  // throw new Error("Rapa deu caca");
-
-  return <h1>Teste App Again</h1>;
+  return (
+    <React.Fragment>
+      <RepositoryList />
+      <Counter />
+    </React.Fragment>
+  );
 }
